@@ -1,0 +1,91 @@
+# ============================================================
+# ElectroDesal-TEA (Lithium) — Baseline Configuration
+# ============================================================
+# LCOL model for membrane CDI (mCDI) lithium extraction.
+# All cost values in USD; concentrations in mg/L;
+# flows in gallons/day; thicknesses in mm; lifespans in years.
+
+# ----------------------------
+# Performance parameters
+# ----------------------------
+ALAR: 1.373       # Average lithium adsorption rate [mg/g/h]
+SEC: 5.0          # Specific energy consumption [kWh/kg Li]
+r_extr: 0.18      # Lithium extraction efficiency (fraction, 0–1)
+r_e: 0.4          # Energy recovery fraction (0 = no recovery)
+
+# ----------------------------
+# Water treatment targets
+# ----------------------------
+c_in: 232         # Feed water lithium concentration [mg/L]
+Q_out: 100000     # Product flow rate [gallons/day]
+r: 0.8            # Water recovery fraction (0–1)
+
+# ----------------------------
+# Physical / stack geometry
+# ----------------------------
+h_s: 0.8          # Cell stack height [m]
+D_s: 0.3          # Cell stack diameter [m]
+W_cc: 0.2         # Current collector (electrode) width [m]
+Thk_sp: 0.25      # Spacer thickness [mm]
+Thk_elec: 0.5     # Electrode thickness [mm]
+Thk_cc_Ti: 0.025  # Titanium current collector thickness [mm]
+Thk_cc_gr: 4.0    # Graphite current collector thickness [mm]
+Thk_IEM: 0.13     # IEM thickness [mm]
+Den: 0.75         # Carbon electrode dry density [g/cm³]
+V: 1.2            # Charging cell voltage [V]
+
+# ----------------------------
+# Material costs
+# ----------------------------
+C_car: 10         # Activated carbon cost [$/kg]
+C_LFP: 20         # LFP (lithium iron phosphate) cost [$/kg]
+C_IEM: 60         # Ion exchange membrane areal cost [$/m²]
+C_cb: 2.1         # Carbon black cost [$/kg]
+C_ptfe: 5.0       # PTFE powder cost [$/kg]
+C_sp: 0.4         # Spacer areal cost [$/m²]
+C_cc_Ti: 2.0      # Titanium current collector areal cost [$/m²]
+C_cc_gr: 13.0     # Graphite current collector areal cost [$/m²]
+C_box: 13.0       # Module box cost [$/m² box area]
+C_plate: 26.0     # End-plate cost [$/m² plate area]
+C_sa: 1.2         # Stack auxiliary cost [$/stack]
+C_condSens: 500   # Conductivity sensor cost [$/unit]
+C_pressSens: 40   # Pressure sensor cost [$/unit]
+C_ERD: 20         # Energy recovery device cost [$/unit]
+C_pump_p: 150     # Peristaltic pump cost [$/unit]
+
+# ----------------------------
+# Financial parameters
+# ----------------------------
+i: 0.07           # Discount rate (EPA private-sector default)
+L_pl: 20          # Plant service life [years]
+L_IEM: 8          # IEM replacement interval [years]
+L_elec: 0.5       # Electrode replacement interval [years]
+F_TCC: 2.0        # Total capital cost / equipment cost ratio
+
+# ----------------------------
+# O&M cost factors (fraction of TCC per year)
+# ----------------------------
+F_vp: 0.05        # Valves and piping factor
+F_ec: 0.05        # Electronic controls factor
+F_ML: 0.02        # Maintenance and labor factor
+F_C: 0.01         # Chemicals factor
+
+# ----------------------------
+# Energy / utility
+# ----------------------------
+VC_electri: 0.07  # Electricity price [$/kWh]
+SPE: 0.1          # Specific pumping energy [kWh/m³]
+
+# ----------------------------
+# System design constants
+# ----------------------------
+LF: 0.9           # System load factor [-]
+n_stack_module: 32  # Number of stacks per module
+n_train: 1        # Number of parallel treatment trains
+FE: 1.0           # Flow efficiency [-]
+
+# ----------------------------
+# Molecular constants
+# ----------------------------
+Li_MW: 6.94       # Molar mass of lithium [g/mol]
+LiOH_MW: 41.96    # Molar mass of LiOH·H₂O [g/mol]
