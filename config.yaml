@@ -8,7 +8,7 @@
 # ----------------------------
 # Performance parameters
 # ----------------------------
-ALAR: 1.373       # Average lithium adsorption rate [mg/g/h]
+ALAR: 1.716       # Average lithium adsorption rate [mg/g/h]
 SEC: 5.0          # Specific energy consumption [kWh/kg Li]
 r_extr: 0.18      # Lithium extraction efficiency (fraction, 0–1)
 r_e: 0.4          # Energy recovery fraction (0 = no recovery)
