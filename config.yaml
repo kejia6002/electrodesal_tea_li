@@ -38,7 +38,7 @@ V: 1.2            # Charging cell voltage [V]
 # Material costs
 # ----------------------------
 C_car: 10         # Activated carbon cost [$/kg]
-C_LFP: 20         # LFP (lithium iron phosphate) cost [$/kg]
+C_LFP: 10         # LFP (lithium iron phosphate) cost [$/kg]
 C_IEM: 60         # Ion exchange membrane areal cost [$/m²]
 C_cb: 2.1         # Carbon black cost [$/kg]
 C_ptfe: 5.0       # PTFE powder cost [$/kg]
