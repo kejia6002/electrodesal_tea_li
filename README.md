@@ -196,8 +196,7 @@ The following bugs were identified and fixed during repo preparation:
 If you use this model in published work, please cite the associated
 thesis or paper (update this section with your reference):
 
-> [Author]. *Techno-Economic Analysis of mCDI for Lithium Extraction
-> from Geothermal Brines*. [Journal/Thesis], [Year].
+> Kong, L. et al. Electro-driven direct lithium extraction from geothermal brines to generate battery-grade lithium hydroxide. Nature Communications 16, 806, doi:10.1038/s41467-025-56071-x (2025).
 
 ---
 
